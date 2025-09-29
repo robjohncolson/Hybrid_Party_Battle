@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Party Battle</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f0f0f0; text-align: center; margin: 0; padding: 20px; }
+        canvas { border: 2px solid #000; background: #fff; margin: 20px auto; display: block; }
+        #goals { max-width: 800px; margin: 0 auto; }
+        button { padding: 10px 20px; background: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+    <h1>Hybrid Party Battle</h1>
+    <p>Welcome to a browser-based multiplayer game for up to 16 players! Blend racing, building, and battling in fun, short rounds.</p>
+    
+    <section id="goals">
+        <h2>Game Goals</h2>
+        <ul>
+            <li><strong>Multiplayer Fun</strong>: Join lobbies with classmates for team-based competition.</li>
+            <li><strong>Hybrid Modes</strong>: Race to objectives, build structures, and battle in rotating rounds.</li>
+            <li><strong>Scoring & Winning</strong>: Earn points per round; highest score wins after 3-5 rounds.</li>
+            <li><strong>Browser-Only</strong>: No downloads—runs on school laptops via web tech.</li>
+            <li><strong>Forward Goals</strong>: Expand to custom modes, leaderboards, and teacher tools for classroom integration.</li>
+        </ul>
+    </section>
+    
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    
+    <button id="joinButton">Join a Game</button>
+    <button id="createButton">Create Lobby</button>
+    
+    <script>
+        // Placeholder JS for mockup (e.g., draw a simple arena)
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#00FF00';
+        ctx.fillRect(100, 100, 600, 400); // Mock game arena
+        ctx.fillStyle = '#FF0000';
+        ctx.fillRect(350, 300, 50, 50); // Mock player/entity
+        
+        // Event placeholders (in full app, connect to Supabase/Railway)
+        document.getElementById('joinButton').addEventListener('click', () => alert('Enter lobby code to join!'));
+        document.getElementById('createButton').addEventListener('click', () => alert('Lobby created! Share code: ABC123'));
+    </script>
+</body>
+</html>
